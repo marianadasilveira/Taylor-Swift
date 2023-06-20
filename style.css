@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+
+}
+
+body {
+  font-family: Ms Trebuchet;
+  overflow-x: hidden;
+}
+.bg{ /*background index*/
+  background-image: url(img/imagem-index.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  width: 100%;
+  height: 950px;
+}
+
+.bg2{ /*background contato*/
+  background-image: url(img/background.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  width: 100%;
+  height: 950px;
+}
+
+
+/*MENU*/
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav{
+  right:0;
+  display: right;
+  position: absolute;
+  height: 15%;
+}
+
+#menu {
+  background-color: #020923;
+  height: 9.5%; /*tamanho da barra do menu*/
+  position: absolute;
+  display: block;
+  width: 100%;
+}
+
+#logo {
+  float: left;
+  width: 30%;
+  top:0;
+  margin: 0px;
+  display: inline;
+  vertical-align: middle;
+  margin-left: 1%;
+}
+
+.img {
+  width: 25%;
+  top:0px;
+}
+
+#menu ul {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  position: relative;
+  z-index: 1; /*distância dos itens em relação à margem esquerda*/
+}
+
+#menu ul li {
+  display: inline-flex;
+}
+
+#menu ul li a {
+  font-family: 'open_sansregular';
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 15px;
+  color: #fff;
+  line-height: 75px; /*centraliza o texto na vertical*/
+  padding: 0 35px;
+  letter-spacing: 2.5px; /*espaço das letras*/
+  position: relative;
+}
+
+#menu ul li a:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #77262b; 
+  color: #ccc;
+  z-index: -1;
+  transform: skewX(-35deg); /*deixar os lados do retângulo na diagonal*/
+  opacity: 0;
+  transition: opacity 0.3s; /*delei em segundos da animação de cores*/
+}
+
+#menu ul li:hover a,
+#menu ul li:focus a,
+#menu ul li.active a {
+  color: #fff;
+}
+#menu ul li:hover a:after,
+#menu ul li:focus a:after,
+#menu ul li.active a:after {
+  opacity: 1;
+}
+
+.taylorfoto{
+  z-index: -1;
+  position: relative;
+}
+
+
+
+/*CONFIGURAÇÃO RODAPE*/
+.rodape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0px;
+  right: 0cm;
+  left: 0cm;
+  border-radius: 0px;
+  padding: 10px;
+  background-color: #020923;
+  color: #ffffff;
+}
+
+/*CONFIGURAÇÃO SETA*/
+.seta {
+    display: flex;
+    position: fixed;
+    justify-content: right;
+    justify-items: right;
+    justify-self: right;
+    bottom: 4%;
+    right: -450px;
+}
+.seta img{
+    width: 5%;
+    border-radius: 15px;
+    box-shadow: 10px 10px 30px #000000;
+}
+
+
+  /*COLUNAS DE TEXTO*/
+
+p{
+  font-family: 'Inter', sans-serif;
+  color: whitesmoke;
+  font-size: x-large;
+  text-align: justify;
+}
+
+
+
+
+
+
+/*CONFIGURAÇÕES DE TEXTO*/
+.titulo{
+  position: absolute;
+  margin-left: 39%;
+  margin-top: 6%;
+}
+@font-face {
+  font-family: Starlight;
+  src: url(../font/IMFellDWPica-Italic.ttf);
+}
+h1{
+  text-align: center;
+  font-family: Starlight;
+  font-size: 60px;
+  color: whitesmoke;
+  letter-spacing: 4px;
+  align-content: center;
+}
+h2 {
+  padding: 1cm;
+  font-family: 'Bahnschrift Condensed';
+  text-indent: 40px;
+  text-align: justify;
+}
+h3{
+  align-items: center;
+  margin-top: 15%;
+  text-align: center;
+  padding: 0.3cm;
+  font-family: Starlight;
+  text-indent: 35px;
+  color: whitesmoke;
+  font-size: 30px;
+}
+h4{
+  align-items: center;
+  margin-top: 5%;
+  text-align: center;
+  padding: 0.3cm;
+  font-family: Starlight;
+  text-indent: 35px;
+  color: whitesmoke;
+  font-size: 30px;
+}
+h5{
+  font-family: 'open_sansregular';
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 13px;
+  justify-content: center;
+  text-align: center;
+}
+p {
+  padding: 1cm;
+  font-family: 'Bahnschrift Condensed';
+  text-indent: 40px;
+  text-align: justify;
+}
+i{
+  padding: 0.3cm;
+  font-family: Starlight;
+  text-align: justify;
+}
+
+
+
+
+/*PAGINA INDEX*/
+.text-index {
+  margin-left: 5%;
+  width: 28%;
+  padding: 30px;
+  position: absolute;
+  margin-top: 7%;
+  margin-left: 5%;
+}
+.index-background{
+  background: none;
+  background-image: ('img/imagem-index.png') no-repeat bottom center scroll;
+  background-position: 100% 0%;
+  background-size: cover;
+}
+
+
+
+/*PÁGINA BIOGRAFIA*/
+.biografia1 {
+  display: flex;
+  margin-left: 5%;
+  margin-top: 13%;
+  width: 90%;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.biografia1 img {
+  width: 30%;
+  box-shadow: 5px 5px 20px #000000;
+  position: relative;
+}
+
+
+.biografia2 {
+  display: flex;
+  margin-left: 5%;
+  width: 90%;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.biografia2 img {
+  width: 30%;
+  box-shadow: 5px 5px 20px #000000;
+  position: relative;
+}
+
+
+.biografia3 {
+  display: flex;
+  margin-left: 5%;
+  width: 90%;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.biografia3 img {
+  width: 20%;
+  box-shadow: 5px 5px 20px #000000;
+  position: relative;
+}
+
+
+
+
+/*PÁGINA ALBUNS*/
+
+/*TEXTO 1*/
+.texto1 {
+  display: inline-flex;
+  margin-left: 5%;
+  margin-top: 1%;
+  width: 90%;
+  height: relative;
+  align-items: center;
+  text-align: justify;
+  box-shadow: 5px 5px 20px #000000;
+  background-color: #5775C2;
+  position: relative;
+}
+.texto1 img {
+  width: 100%;
+  box-shadow: 5px 5px 20px #000000;
+  position: relative;
+}
+
+.lista {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-left: 10%;
+  color: white;
+}
+.lista li::before {
+  content: counter(num-list);
+  margin-right: 5px;
+  font-size: 80%;
+  background-color: #6d93f2;
+  color: white;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 3px;
+}
+.lista li {
+  counter-increment: num-list;
+  margin-bottom: 10px;
+}
+
+.div1{
+  justify-content: left;
+  width: 30%;
+}
+.div2 {
+  justify-content: right;
+  width: 30%;
+  margin-left: 3%;
+}
+.div3 {
+  justify-content: right;
+  width: 30%;
+  margin-left: 3%;
+}
+
+
+
+/*TEXTO 2*/
+.texto2 {
+  display: inline-flex;
+  margin-left: 5%;
+  margin-top: 1%;
+  width: 90%;
+  height: relative;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 30px #443d3d;
+  background-color: #5775C2;
+  text-align: left;
+  position: relative;
+}
+.texto2-div3 img {
+  width: 100%;
+  box-shadow: 5px 5px 30px #000000;
+  position: relative;
+  margin-left: 50px;
+}
+
+.texto2-div1{
+  justify-content: left;
+  width: 30%;
+}
+.texto2-div2{
+  justify-content: right;
+  width: 30%;
+  margin-left: 3%;
+}
+.texto2-div3{
+  justify-content: right;
+  width: 30%;
+}
+
+
+
+
+
+/*GALERIA DE FOTOS*/
+.galeria{
+  display: inline-flex;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 12%;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  align-content:center;
+}
+.foto-galeria{
+  width: 200px;
+  height: relative;
+  margin-right: -40px; /*efeito de sobreposição das fotos (proposital)*/
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+}
+.foto-galeria:hover{
+  transform: scale(1.2); /*foco na imagem*/
+  position: relative;
+  transition: 300ms linear;  /*duração da transição e função do tempo*/
+}
+.galeria2{
+  display: inline-flex;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 0.01%;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  align-content:center;
+}
+
+
+
+
+/*FORMULARIO*/
+.formulario {
+  border-radius: 50px;
+  background-color: #020923;
+  padding: 60px; /*tamanho do formulario*/
+  width: 25%;
+  position: fixed;
+  margin-top: 11%;
+  color: white;
+  margin-left: 65%;                                                                               
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px; /*tamanho do espaço do texto*/
+  margin: 8px 0; /*distância entre os itens*/
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit], input[type=reset] {
+  width: 49%;
+  justify-content: center;
+  background-color: #77262b;
+  color: white;
+  padding: 14px 20px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover, input[type=reset]:hover {
+  background-color: #BA3C44;
+}
+
+/*CONCLUSÃO DE FORMULARIO*/
+textarea {
+  width: 100%;
+  min-height: 40%;
+  padding: 12px 20px; /*tamanho do espaço do texto*/
+  margin: 8px 0; /*distância entre os itens*/
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: none;
+}
